@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Mascotas — Portafolio Marlon Castillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo_2.webp" type="image/webp" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo_2.webp" alt="Logo" /></a>
+      <div class="header-actions">
+        <!-- Switch Modo Oscuro mejorado -->
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+          </span>
+        </label>
+        <a href="index.html" class="btn btn-outline btn-sm">Volver al portafolio</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO MASCOTAS -->
+  <section class="hero hero-sm">
+    <div class="container">
+      <h1 class="hero-title">Mis <span class="accent">Mascotas</span></h1>
+      <p class="hero-bio">Los mejores compañeros de programación que existen.</p>
+    </div>
+  </section>
+
+  <!-- MASCOTAS GRID -->
+  <section class="section" id="mascotas-lista">
+    <div class="container">
+      <div class="gallery-grid">
+
+        <article class="card">
+          <img src="images/gato.webp" alt="Fotografía de Luna, gata naranja" class="card-img" />
+          <div class="card-body">
+            <h2 class="card-title">Luna </h2>
+            <p class="card-desc">
+              Gata naranja de 3 años. Experta en caminar sobre el teclado justo cuando estoy escribiendo código.
+            </p>
+            <span class="tag">Gata</span>
+            <span class="tag">3 años</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/perro.webp" alt="Fotografía de Max, perro labrador" class="card-img" />
+          <div class="card-body">
+            <h2 class="card-title">Max </h2>
+            <p class="card-desc">
+              Labrador de 5 años. Mi fiel compañero para salir a caminar y despejar la mente después de depurar bugs.
+            </p>
+            <span class="tag">Perro</span>
+            <span class="tag">5 años</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/loro.webp" alt="Fotografía de Pipo, loro verde" class="card-img" />
+          <div class="card-body">
+            <h2 class="card-title">Pipo </h2>
+            <p class="card-desc">
+              Loro cotorro de 2 años. Sabe decir "Hello World" y ya está aprendiendo a decir "console.log".
+            </p>
+            <span class="tag">Loro</span>
+            <span class="tag">2 años</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/hamster.webp" alt="Fotografía de Simbad, hámster" class="card-img" />
+          <div class="card-body">
+            <h2 class="card-title">Simbad </h2>
+            <p class="card-desc">
+              Hámster explorador. Le encanta correr en su rueda mientras compilo grandes proyectos.
+            </p>
+            <span class="tag">Hámster</span>
+            <span class="tag">1 año</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/gata2.webp" alt="Fotografía de Nala, gata siamesa" class="card-img" />
+          <div class="card-body">
+            <h2 class="card-title">Nala </h2>
+            <p class="card-desc">
+              Gata siamesa muy vocal. Me avisa cuando es hora de tomar un descanso del monitor.
+            </p>
+            <span class="tag">Gata</span>
+            <span class="tag">4 años</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/tortuga.webp" alt="Fotografía de Rocky, tortuga" class="card-img" />
+          <div class="card-body">
+            <h2 class="card-title">Rocky </h2>
+            <p class="card-desc">
+              Tortuga veloz (a su manera). Me recuerda que la constancia supera a la rapidez en el código.
+            </p>
+            <span class="tag">Tortuga</span>
+            <span class="tag">10 años</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Marlon Castillo</span>
+      <nav aria-label="Redes sociales">
+        <a href="https://github.com/MarlonCastilloj" class="footer-link">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

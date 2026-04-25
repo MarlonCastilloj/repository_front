@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Marlon Castillo</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.webp" type="image/webp" />
+</head>
+
+<body>
+
+
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo_2.webp" alt="Logo" /></a>
+      <nav class="nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="mascotas.html">Mascotas</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <!-- Switch Modo Oscuro mejorado -->
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+          </span>
+        </label>
+        <!-- Hamburguesa para móvil -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-label">Desarrollador Web</p>
+        <h1 class="hero-title">Hola, soy <br /><span class="accent">Marlon Castillo</span></h1>
+        <p class="hero-bio" id="hero-bio">
+          Diseño y construyo experiencias digitales con código limpio y buenas prácticas.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="btn-cambiar-texto">Conóceme más</button>
+          <button class="btn btn-outline" id="btn-toggle-skills">Ver habilidades</button>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <img src="images/perfil2.png" alt="Ilustración de perfil de Marlon Castillo" class="avatar-img" width="320"
+          height="320" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PANEL DE HABILIDADES (oculto por defecto, JS lo muestra) ========== -->
+  <div class="skills-panel hidden" id="skills-panel">
+    <div class="container">
+      <h2 class="section-subtitle">Habilidades técnicas</h2>
+      <ul class="skills-list">
+        <li class="skill-tag">HTML5</li>
+        <li class="skill-tag">CSS3</li>
+        <li class="skill-tag">JavaScript</li>
+        <li class="skill-tag">Responsive Design</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ========== SOBRE MÍ ========== -->
+  <section class="section" id="sobre-mi">
+    <div class="container two-col">
+      <div class="col-text">
+        <h2 class="section-title">Sobre mí</h2>
+        <p>
+          Soy estudiante de Desarrollo Web apasionado por crear interfaces que sean tanto funcionales como
+          visualmente atractivas.
+        </p>
+        <p>
+          Cuando no estoy programando, disfruto la fotografía, el senderismo y pasar tiempo con mis mascotas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROYECTOS ========== -->
+  <section class="section section-dark" id="proyectos">
+    <div class="container">
+      <h2 class="section-title centered">Proyectos</h2>
+      <div class="projects-grid">
+
+        <article class="card">
+          <img src="images/inventario.webp" alt="Captura del proyecto Inventario" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Inventario</h3>
+            <p class="card-desc">Sistema de control de inventario con gestión de productos y validaciones.</p>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+            </div>
+            <a href="https://github.com/MarlonCastilloj/my-repository" class="btn btn-primary btn-sm">Ver proyecto</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/tareas.webp" alt="Captura del proyecto Admin de Tareas" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Admin de tareas</h3>
+            <p class="card-desc">Aplicación para gestionar tareas con diferentes estados y prioridades.</p>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+            </div>
+            <a href="https://github.com/MarlonCastilloj/Admin-Tareas" class="btn btn-primary btn-sm">Ver proyecto</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="section section-dark" id="contacto">
+    <div class="container contact-inner">
+      <h2 class="section-title centered">Contacto</h2>
+      <p class="contact-sub">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">¿Qué tienes en mente?</label>
+          <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..."
+            required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Enviar mensaje →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Marlon Castillo</span>
+      <nav aria-label="Redes sociales">
+        <a href="https://github.com/MarlonCastilloj" class="footer-link">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- JS enlazado justo antes de </body> 
+  <script src="js/script.js"></script>
+</body>
+
+</html>
